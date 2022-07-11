@@ -1,0 +1,114 @@
+compilation process:
+java:
+  - source code (.java)--> byte code(.class)  -->(runs in JVM)
+c++:
+  - source code(.cpp and .h)--> assembly code (.s) --> exe file (.out or .exe)
+
+pre-processors:
+java:
+  - No pre-processors
+c++:
+  -#include, #define, #ifndef, # ifdef, # endif, ....
+Code organization:
+java:
+  -packages(named in reverse order: java.util.vector)
+  -packages names are related to the file system.
+c++:
+  -Namespaces (delimited with :: std::string )
+  -Namespaces are NOT related to the file system.
+
+Functions:
+Java:
+  - Order of functions doesn't matter.
+  -Main method is part of a class.
+  - Parameters are passed by reference value
+c++:
+  -Order matters
+  -Main method is a regular method
+  -Parameteres are passed by value or by reference 
+=========
+Variables:
+Java:
+  -Primitive vavlues will be in stack (virtually).
+  -All objects will be in the heap, while references to objects will be in the stack(virtually) 
+* Because of Java Virtual Machine
+
+C++:
+  -Primitive values (stack or Heap)
+  -Objects (Stack or Heap)
+==========
+Statcis:
+Java:
+  - Can create static atrribute or Static method.
+C++:
+  - Can create Static attribute or static method or static variable in a regular function.
+==========
+Arrays:
+Java:
+  -Arrays are objects of a class (they have attributes and methods).
+C++:
+  -Arrays are NOT objects(No bounds check).
+  -You can create static array: int x[10];
+
+====
+Objects:
+Java:
+  - the keyword (new) is used with objects only
+  - it is ued to allocate memory for the object (call the consturctor will be called , and a ref to the object will be returned)
+C++:
+  - The keyword (new) is used only with pointers (to any type).
+  - It is used to allocate memory.
+  - with objects, the constructor will be called, and a pointer to the object will be returned.
+==========
+Access Control:
+Java:
+  - We can specify the class itself as public or private
+  -The default access specifier is (default)
+  -each memebr has its own access specifier
+C++:
+  - We can NOT specify the class itself as public or priavte or protected
+  - the default is private
+  -specifier applys to all members following it.
+===========
+Friendship:
+Java:
+  -No friendship.
+C++:
+  -There are Friend functions to classes
+============
+Inheritance:
+Java:
+  - All classes are subcalsses of main class (Object).
+  -One type of inheritance (public).
+C++:
+  - No class hierarchy root like java
+  - Different types of inheritance (public, private, protected, virtual).
+  -Single or Multiple inheritance.
+  -Virtual Inheritance is used to ensure that only one copy of base classes exist
+=============
+Virtual method:
+Java:
+  - All methods are virtual.
+C++:
+  - Methods are called based on the dynamic type ONLY if they are virtual.
+  - Virtual method can NOT be static.
+  -can have virtual desturcor but NOT a constructor.
+============
+Abstract:
+Java:
+  -Any class that has abstract method is abstract.
+  - abstrract class contains at least one abstract methods.
+C++:
+  - Abstract class is a class that has at least one pure virtual method.
+  - can ONLY create pointer to object of an abstract class.
+=============
+Interfaces:
+Java:
+  - we use the keyword (interface).
+C++:
+  - An interface is a class with all methods are pure vitual methods.
+
+==========
+overloading:
+Java：
+  -
